@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+maximum-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="icon" href="img//ag.jpg">
+  <link rel="stylesheet" href="amg.css" />
+  <title>pedidos</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://kit.fontawesome.com/03a55a22bc.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <nav>
+    <span class="selector"> <a href="index.html">inicio </a></span>
+    <span class="selector"><a href="amg2.html">galería </a></span>
+    <span class="selector"><a href="amg3.html">pedidos</a></span>
+  </nav>
+  <div id="animacion">formulario de pedidos</div>
+  <div class="container">
+    <form>
+      <div>
+        <p>
+          Envie sus datos y su selección y nos comunicaremos a la brevedad.
+        </p>
+
+
+      </div>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre y Apellido</label>
+        <input type="nombre" class="form-control" id="nombre" aria-describedby="emailHelp" required>
+        <!-- <div id="texto" class="form-text">Ingrese su nombre y apellido</div> -->
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+      </div>
+      <div>
+        <p>
+          Seleccione el nombre del muñeco elegido u otro si desea enviarnos una imagen para su muñeco personalizado.
+        </p>
+      </div>
+
+
+      <select class="form-select" id="seleccion" aria-label="Default select example">
+        <option selected disabled>Elija su muñeco / Otro para enviar un archivo</option>
+        <option value="1">Leia</option>
+        <option value="2">r2d2</option>
+        <option value="3">Yoda</option>
+        <option value="4">Darth Vader</option>
+        <option value="5">Guardia</option>
+        <option value="6">Minion</option>
+        <option value="7">Eevee</option>
+        <option value="8">Totoro</option>
+        <option value="9">Otro</option>
+
+
+      </select>
+
+      <!-- <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="elijo">
+      <label class="form-check-label" for="flexSwitchCheckDefault">Quiero elegir mi propio diseño</label>
+    </div> -->
+
+
+
+      <div class="input-group">
+        <input type="file" class="form-control" id="propio" aria-describedby="inputGroupFileAddon04" aria-label="Upload"
+          aria-placeholder="seleciiona la imagen de su muñeco personalizado">
+        <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button> -->
+      </div>
+      <br>
+
+      <!-- <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="enviar">
+      <label class="form-check-label" for="exampleCheck1">Enviar</label>
+    </div> -->
+      <button type="submit" id="enviar" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="amg.js"></script>
+
+
+</body>
+
+</html>
